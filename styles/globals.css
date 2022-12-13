@@ -1,26 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary {
+  background-color: #0085D0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.title-flip {
+  position: relative;
 }
-
-* {
-  box-sizing: border-box;
+.title-flip span {
+  position: relative;
+  display: inline-block;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
   }
 }

@@ -1,0 +1,31 @@
+.academicContainer .academics li.academicItem {
+  list-style: none;
+  min-height: 50px;
+  border-left: 1px dashed rgb(156, 156, 156);
+  padding: 0px 0px 50px 30px;
+  position: relative;
+  margin: 0;
+}
+
+.academicContainer li.academicItem:last-child {
+  border-left: 0;
+}
+
+.academicContainer li.academicItem::before {
+  position: absolute;
+  left: -18.6px;
+  top: -17px;
+  content: "🏫";
+  font-size: 35px;
+}
+
+.academicContainer ul.academics li.academicItem .timestamp {
+  color: #50d890;
+  position: relative;
+  width: 100px;
+  font-size: 12px;
+}
+
+.item-title {
+  color: #fff;
+}
