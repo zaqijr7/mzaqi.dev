@@ -12,7 +12,7 @@ export default function Home() {
               Muhammad Zaqi Al <br />
               Quraisyi
             </h2>
-            <div className="text-3xl p-3 bg-[#0085D0] font-thin mt-5 inline-block text-white">
+            <div className="text-3xl p-3 bg-gradient-to-r from-cyan-500 to-blue-500 font-thin mt-5 inline-block text-white">
               Fullstack Web & Mobile Developer
             </div>
           </div>
