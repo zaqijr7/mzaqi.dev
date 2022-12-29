@@ -18,7 +18,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-6/12 flex content-center items-center">
-          <Image src="/sayaa.png" width={700} height={700} />
+          <Image src="/sayaa.png" width={700} height={700} alt="me" />
         </div>
       </div>
     </Layout>

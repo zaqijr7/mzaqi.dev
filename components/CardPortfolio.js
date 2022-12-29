@@ -14,6 +14,7 @@ const CardPortfolio = () => {
             style={{
               objectFit: "cover",
             }}
+            alt="thumbnail portfolio"
             className="rounded-lg"
           />
         </div>
@@ -34,7 +35,7 @@ const CardPortfolio = () => {
           </div>
           <iframe
             src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true"
-            frameborder="0"
+            frameBorder="0"
             width="114.5"
             height="20"
             title="GitHub"

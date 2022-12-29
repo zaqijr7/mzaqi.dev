@@ -23,6 +23,7 @@ export default function Home() {
                 fill={true}
                 className="rounded-lg m-0"
                 style={{ objectFit: "cover", objectPosition: "center" }}
+                alt="me"
               />
             </div>
             <div className="inline">
