@@ -4,8 +4,11 @@ import { Layout } from "../components";
 export default function Home() {
   return (
     <Layout>
-      <div className="h-screen flex p-10">
-        <div className="w-6/12 flex justify-center items-center">
+      <div className="lg:h-screen flex justify-center items-center flex-col px-10 lg:flex-row-reverse">
+        <div className="lg:w-6/12 h-screen lg:h-fit flex justify-center items-center">
+          <Image src="/sayaa.png" width={700} height={700} alt="me" />
+        </div>
+        <div className="lg:w-6/12 h-screen lg:h-fit flex justify-center items-center">
           <div>
             <div className="text-5xl font-thin mb-3">Hello i&apos;m</div>
             <h2 className="text-6xl font-medium">
@@ -16,9 +19,6 @@ export default function Home() {
               Fullstack Web & Mobile Developer
             </div>
           </div>
-        </div>
-        <div className="w-6/12 flex content-center items-center">
-          <Image src="/sayaa.png" width={700} height={700} alt="me" />
         </div>
       </div>
     </Layout>

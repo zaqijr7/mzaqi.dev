@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
           exit="exit"
           variants={variants}
           transition={{ type: "linear" }}
-          className="w-10/12 overflow-auto"
+          className="xl:w-10/12 lg:overflow-auto"
         >
           {children}
         </motion.main>

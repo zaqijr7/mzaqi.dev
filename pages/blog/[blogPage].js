@@ -1,16 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { Layout } from "../../components";
-import { UilArrowLeft, UilHeart, UilShare } from "@iconscout/react-unicons";
+import { Footer, Layout } from "../../components";
+import {
+  UilArrowLeft,
+  UilHeart,
+  UilShare,
+  UilArrowUp,
+} from "@iconscout/react-unicons";
 import Image from "next/image";
 
 export default function BlogPost() {
   const router = useRouter();
-  // console.log(router);
+  const [isToggle, setIsToggle] = useState(false);
+
+  const handleScroll = () => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setIsToggle(true);
+      } else {
+        setIsToggle(false);
+      }
+    });
+  };
+
+  useEffect(() => {
+    handleScroll();
+  }, [handleScroll]);
+
   return (
     <>
       <Layout className="">
-        <div className="w-7/12 px-20 py-10 overflow-auto scrollbar-hide">
+        <div
+          className="xl:w-7/12 lg:px-20 px-3 py-10 overflow-auto scrollbar-hide"
+          onScroll={handleScroll}
+        >
           <div className="flex items-center">
             <UilArrowLeft /> Back
           </div>
@@ -22,7 +45,10 @@ export default function BlogPost() {
             <div className="bg-gray-200 py-2 px-3 rounded-full">
               04 October 2022
             </div>
-            <div className="bg-gray-200 p-2 rounded-full mx-2">
+            <div
+              className="bg-gray-200 p-2 rounded-full mx-2"
+              onClick={() => setIsToggle(!isToggle)}
+            >
               <UilHeart />
             </div>
             <div className="bg-gray-200 p-2 rounded-full">
@@ -257,7 +283,7 @@ export default function BlogPost() {
             quis do laboris.
           </div>
         </div>
-        <div className="w-3/12 py-10 px-3 overflow-auto">
+        <div className="xl:w-3/12 py-10 xl:px-3 lg:px-20 px-3 overflow-auto">
           <i className="text-2xl font-bold">Latest Post</i>
           {[...Array(100)].map((a, i) => (
             <div key={i} className="my-2 font-semibold border-b py-1">
@@ -266,7 +292,15 @@ export default function BlogPost() {
             </div>
           ))}
         </div>
+        <Footer />
       </Layout>
+      <div
+        className={`p-3 xl:hidden bg-slate-700 right-0 bottom-0 rounded-full text-white fixed mr-3 mb-3 shadow-2xl transform transition-all duration-200 ${
+          isToggle ? "translate-y-0" : "translate-y-20"
+        }`}
+      >
+        <UilArrowUp />
+      </div>
     </>
   );
 }

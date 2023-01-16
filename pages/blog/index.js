@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArticleCard, BtnPortfolioType, Layout } from "../../components";
 
 export default function Blog() {
@@ -26,7 +25,7 @@ export default function Blog() {
             Personal
           </BtnPortfolioType>
         </div>
-        <div className="grid grid-cols-3 gap-5 mt-5">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-5 mt-5">
           <ArticleCard link="cara-memilih-framework-fe" />
           <ArticleCard link="trik-mendapat-dolar" />
           <ArticleCard />

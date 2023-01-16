@@ -11,29 +11,31 @@ import {
 export default function Home() {
   return (
     <Layout>
-      <div id="container" className="p-10">
+      <div id="container" className="p-5 lg:p-10">
         <div className="flex flex-col">
           <div className="pb-5 border-b-2">
-            <div
-              id="cover-my-image"
-              className="w-[250px] h-[250px] mr-5 relative inline float-left"
-            >
-              <Image
-                src={"/saya.jpeg"}
-                fill={true}
-                className="rounded-lg m-0"
-                style={{ objectFit: "cover", objectPosition: "center" }}
-                alt="me"
-              />
+            <div className="flex lg:inline-block lg:float-left items-center justify-center mb-5 lg:mb-0">
+              <div
+                id="cover-my-image"
+                className="w-[250px] h-[250px] mr-5 relative"
+              >
+                <Image
+                  src={"/saya.jpeg"}
+                  fill={true}
+                  className="rounded-lg m-0"
+                  style={{ objectFit: "cover", objectPosition: "center" }}
+                  alt="me"
+                />
+              </div>
             </div>
-            <div className="inline">
-              <div className="text-[1.8vw] font-semibold m-0">
+            <div className="text-center lg:text-left">
+              <div className="text-3xl font-semibold m-0">
                 MUHAMMAD ZAQI Al QURAISYI
               </div>
-              <div className="text-[1.8vw] font-thin">
+              <div className="text-3xl font-thin">
                 Frontend Developer at Mandala Multifinance
               </div>
-              <div className="text-xl mt-3 text-justify">
+              <div className="text-xl mt-3 text-justify break-all">
                 A Web and mobile developer who have a very high interest
                 intechnological developments, especially in web and mobile app
                 development. Able to adapt quickly both learning new things,
@@ -54,7 +56,7 @@ export default function Home() {
               icon="👨🏼‍💻"
               styles="text-3xl font-semibold my-3"
             />
-            <div className="grid grid-cols-3 gap-3 mb-3">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 mb-3">
               <CardCareer
                 title="Frontend Developer"
                 companyName="Mandala Finance"
