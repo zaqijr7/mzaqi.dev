@@ -1,9 +1,9 @@
-import { ArticleCard, BtnPortfolioType, Layout } from "../../components";
+import { ArticleCard, BtnPortfolioType, Layout } from "@components/index";
 
 export default function Blog() {
   return (
     <Layout>
-      <div className="p-10">
+      <div className="xl:p-10 lg:p-5 p-3">
         <div className="text-3xl font-semibold mb-5">📑 Articles</div>
         <div className="w-full flex overflow-x-scroll p-3 scrollbar-hide">
           <BtnPortfolioType isActive={false} className="mr-2">

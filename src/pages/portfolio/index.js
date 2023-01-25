@@ -1,10 +1,10 @@
 import React from "react";
-import { BtnPortfolioType, CardPortfolio, Layout } from "../../components";
+import { BtnPortfolioType, CardPortfolio, Layout } from "@components/index";
 
 export default function Portfolio() {
   return (
     <Layout>
-      <div className="p-10">
+      <div className="xl:p-10 lg:p-5 p-3">
         <div className="text-3xl font-semibold mb-5">🏆 My Portfolio</div>
         <div className="flex overflow-auto scrollbar-hide mb-5">
           <BtnPortfolioType isActive={false} className="mr-2">

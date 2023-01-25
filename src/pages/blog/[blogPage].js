@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
-import { Footer, Layout } from "../../components";
+import { Footer, Layout } from "@components/index";
 import {
   UilArrowLeft,
   UilHeart,
@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function BlogPost() {
   const router = useRouter();
   const [isToggle, setIsToggle] = useState(false);
-
+  const toTop = useRef(0);
   const handleScroll = () => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
@@ -30,11 +30,12 @@ export default function BlogPost() {
   return (
     <>
       <Layout className="">
-        <div
-          className="xl:w-7/12 lg:px-20 px-3 py-10 overflow-auto scrollbar-hide"
-          onScroll={handleScroll}
-        >
-          <div className="flex items-center">
+        <div className="xl:w-7/12 lg:px-20 px-3 py-10 overflow-auto scrollbar-hide">
+          <div id="top" ref={toTop} />
+          <div
+            className="flex items-center cursor-pointer"
+            onClick={() => router.back()}
+          >
             <UilArrowLeft /> Back
           </div>
           <div className="my-5 font-bold text-3xl">
@@ -46,12 +47,14 @@ export default function BlogPost() {
               04 October 2022
             </div>
             <div
-              className="bg-gray-200 p-2 rounded-full mx-2"
+              className="bg-gray-200 p-2 rounded-full mx-2 flex items-center"
               onClick={() => setIsToggle(!isToggle)}
             >
+              <span className="mr-1">36</span>
               <UilHeart />
             </div>
-            <div className="bg-gray-200 p-2 rounded-full">
+            <div className="bg-gray-200 p-2 rounded-full flex items-center">
+              <span className="mr-1">36</span>
               <UilShare />
             </div>
             {/* <div>04 October 2022</div> */}
@@ -298,6 +301,7 @@ export default function BlogPost() {
         className={`p-3 xl:hidden bg-slate-700 right-0 bottom-0 rounded-full text-white fixed mr-3 mb-3 shadow-2xl transform transition-all duration-200 ${
           isToggle ? "translate-y-0" : "translate-y-20"
         }`}
+        onClick={() => toTop.current?.scrollIntoView({ behavior: "smooth" })}
       >
         <UilArrowUp />
       </div>

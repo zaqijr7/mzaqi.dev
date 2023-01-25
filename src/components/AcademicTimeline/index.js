@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import styles from "../styles/AcademicTimeline.module.css";
+import styles from "@styles/AcademicTimeline.module.css";
 const AcademicTimeline = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { ButtonMenu } from "./index";
+import { ButtonMenu } from "@components/index";
 import { useRouter } from "next/router";
 import {
   UilEstate,

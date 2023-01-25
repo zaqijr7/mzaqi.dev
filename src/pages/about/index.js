@@ -6,7 +6,7 @@ import {
   ContactForm,
   Layout,
   TitleFlip,
-} from "../../components";
+} from "@components/index";
 
 export default function Home() {
   return (
