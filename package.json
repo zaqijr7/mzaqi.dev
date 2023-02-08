@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
+    "bcrypt": "^5.1.0",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "framer-motion": "^7.6.19",
+    "jsonwebtoken": "^9.0.0",
     "mysql2": "^3.0.1",
     "next": "13.0.6",
     "react": "18.2.0",
