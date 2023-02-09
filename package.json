@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^1.1.6",
+    "@reduxjs/toolkit": "^1.9.2",
     "bcrypt": "^5.1.0",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",

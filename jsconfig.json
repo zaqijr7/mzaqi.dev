@@ -9,6 +9,7 @@
       "@models/*": ["src/lib/models/*"],
       "@middlewares/*": ["src/lib/middlewares/*"],
       "@controllers/*": ["src/lib/controllers/*"],
+      "@modules/*": ["src/modules/*"],
     },
   }
 }

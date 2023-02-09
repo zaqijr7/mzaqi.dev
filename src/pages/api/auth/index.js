@@ -9,7 +9,7 @@ export default async function handler(req, res) {
       register(req, res);
       break;
     default:
-      console.log(`Sorry, we are out of`);
+      res.redirect("/");
       break;
   }
 }
