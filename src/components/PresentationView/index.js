@@ -1,9 +1,12 @@
 import React from "react";
 
-const PresentationView = ({ children }) => (
-  <>
-    <div className="xl:w-screen xl:h-screen xl:flex">{children}</div>
-  </>
-);
+const PresentationView = (props) => {
+  console.log(props, "<<< tinagli");
+  return (
+    <>
+      <div className="xl:w-screen xl:h-screen xl:flex">{props.children}</div>
+    </>
+  );
+};
 
 export default PresentationView;

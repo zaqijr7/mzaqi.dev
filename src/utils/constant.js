@@ -1,1 +1,1 @@
-export const dontAllowSidebar = ["/cms-admin", "/cms-admin/dashboard"];
+export const dontAllowSidebar = ["/cms-admin", "/cms-admin/dashboard", "/404"];

@@ -10,6 +10,7 @@
       "@middlewares/*": ["src/lib/middlewares/*"],
       "@controllers/*": ["src/lib/controllers/*"],
       "@modules/*": ["src/modules/*"],
+      "@redux/*": ["src/redux/*"],
     },
   }
 }
