@@ -76,7 +76,7 @@ export default function BlogPost({ post: { frontmatter, content }, posts }) {
             <ReactMarkdown
               children={content}
               remarkPlugins={[remarkGfm]}
-              className=""
+              className="prose prose-pre:p-0 max-w-none"
               components={{
                 code({ node, inline, className, children, ...props }) {
                   const match = /language-(\w+)/.exec(className || "");
