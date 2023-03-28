@@ -1,12 +1,8 @@
 import { ArticleCard, BtnPortfolioType, Layout } from "@components/index";
 import matter from "gray-matter";
 import fs from "fs";
-import { useEffect } from "react";
 
 export default function Blog({ posts }) {
-  useEffect(() => {
-    console.log(posts, "<<<< ini post");
-  }, [posts]);
   return (
     <Layout>
       <div className="xl:p-10 lg:p-5 p-3">

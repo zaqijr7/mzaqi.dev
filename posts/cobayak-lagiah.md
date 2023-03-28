@@ -19,6 +19,8 @@ Do nulla occaecat cupidatat cillum. Cupidatat culpa ullamco est sunt reprehender
 
 Nulla qui qui velit cillum adipisicing dolore commodo aliquip esse amet mollit deserunt. Amet laboris eu cillum id velit sit do aute aliqua qui labore culpa qui qui. Sit fugiat ad esse duis consectetur irure esse. Eiusmod sunt laborum ut ut.
 
+![Tux, the Linux mascot](https://images.unsplash.com/photo-1679764376519-807d8b7ea416?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80)
+
 Amet tempor nisi consequat amet deserunt. Ut dolor fugiat ea laborum ut quis laboris ullamco velit elit amet velit consequat nostrud. Exercitation veniam dolor adipisicing et ut reprehenderit sunt reprehenderit duis non occaecat excepteur ea aute. Sint Lorem adipisicing nostrud esse non nulla enim eiusmod. Nisi dolor tempor et ipsum. Incididunt Lorem sit culpa ut minim mollit eiusmod dolor sit laboris sunt exercitation Lorem veniam.
 
 Excepteur ut dolore nostrud magna tempor dolore in. Anim est laborum mollit ea ad laborum consequat sint quis cillum magna culpa cillum labore. Velit ea id qui dolor eu occaecat. Velit consectetur sint est eu ad aliqua enim nulla amet enim. Et sit consequat nulla duis velit incididunt cupidatat deserunt magna culpa do. Exercitation culpa officia incididunt ex sunt. Do ipsum Lorem voluptate anim mollit.

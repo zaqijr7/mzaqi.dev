@@ -10,7 +10,6 @@ const variants = {
 
 const Layout = ({ children }) => {
   const router = useRouter();
-  console.log(!router.query.blogPage, "<<<<< test");
   return (
     <>
       {!router.query.blogPage ? (

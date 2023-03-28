@@ -8,7 +8,6 @@ import { store } from "@redux/store";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  console.log(pageProps, "<<<< props");
 
   const IsVisibleSidebar = () => {
     if (!dontAllowSidebar.includes(router.pathname)) {
