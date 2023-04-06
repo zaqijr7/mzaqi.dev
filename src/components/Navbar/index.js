@@ -52,7 +52,7 @@ function Navbar() {
           <div
             className={`w-[20px] py-[1.2px] bg-black my-1 ${
               isExpand === "navbar-active"
-                ? "-rotate-45 -translate-y-[3px]"
+                ? "-rotate-45 -translate-y-[2.5px]"
                 : "rotate-0 translate-y-0"
             } transition-all duration-300`}
           ></div>

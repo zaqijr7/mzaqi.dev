@@ -7,7 +7,7 @@ date: '2021-09-22'
 teaser: 'Test jadi ini lah contoh teaser yang nantinya bakal muncul di thumbnail, okeee.'
 tags:
   - nextjs
-  - array
+  - javascript
 ---
 
 # The main content
