@@ -1,4 +1,3 @@
-import { Layout } from "@components/index";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
