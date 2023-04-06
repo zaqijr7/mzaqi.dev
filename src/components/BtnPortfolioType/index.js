@@ -8,7 +8,7 @@ const BtnPortfolioType = ({ children, isActive = false, className }) => {
           isActive
             ? "bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
             : "border-2"
-        } rounded-full`}
+        } rounded-full whitespace-nowrap text-sm`}
       >
         {children}
       </button>

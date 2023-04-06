@@ -43,17 +43,17 @@ const CardPortfolio = () => {
               className="px-0 mx-0"
             ></iframe>
           </div>
-          <div className="flex mt-3 flex-wrap justify-around">
-            <div className="py-1 px-3 font-light text-sm rounded-full border border-gray-300 text-gray-500 mt-2 mr-2">
+          <div className="flex mt-3 flex-wrap">
+            <div className="py-1 px-3 font-light text-xs rounded-full border border-gray-300 text-gray-500 mt-2 mx-1">
               Node Js
             </div>
-            <div className="py-1 px-3 font-light text-sm rounded-full border border-gray-300 text-gray-500 mt-2 mx-2">
+            <div className="py-1 px-3 font-light text-xs rounded-full border border-gray-300 text-gray-500 mt-2 mx-1">
               React
             </div>
-            <div className="py-1 px-3 font-light text-sm rounded-full border border-gray-300 text-gray-500 mt-2 mx-2">
+            <div className="py-1 px-3 font-light text-xs rounded-full border border-gray-300 text-gray-500 mt-2 mx-1">
               Tailwind
             </div>
-            <div className="py-1 px-3 font-light text-sm rounded-full border border-gray-300 text-gray-500 mt-2 mx-2">
+            <div className="py-1 px-3 font-light text-xs rounded-full border border-gray-300 text-gray-500 mt-2 mx-1">
               SCSS
             </div>
           </div>

@@ -13,7 +13,7 @@ const CardCareer = ({
   return (
     <>
       <div className="border rounded-lg p-5 shadow-md hover:shadow-lg">
-        <div className="text-xl font-semibold">
+        <div className="text-lg xl:text-xl font-semibold">
           {title} • {employmentType}
         </div>
         <div className="my-2 font-light">

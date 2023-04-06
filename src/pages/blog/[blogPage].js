@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Footer, Layout } from "@components/index";
 import {
@@ -19,7 +19,6 @@ import Link from "next/link";
 export default function BlogPost({ post: { frontmatter, content }, posts }) {
   const router = useRouter();
   const [isToggle, setIsToggle] = useState(false);
-  const toTop = useRef(0);
   const handleScroll = () => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 400) {
@@ -38,8 +37,7 @@ export default function BlogPost({ post: { frontmatter, content }, posts }) {
     <>
       <Suspense fallback={<div>Loading</div>}>
         <Layout className="">
-          <div className="xl:w-7/12 lg:px-20 px-3 py-10 overflow-auto scrollbar-hide">
-            <div id="top" ref={toTop} />
+          <div className="xl:w-7/12 lg:px-20 px-3 xl:py-10 py-7 overflow-auto scrollbar-hide">
             <div
               className="flex items-center cursor-pointer"
               onClick={() => router.back()}
@@ -105,7 +103,6 @@ export default function BlogPost({ post: { frontmatter, content }, posts }) {
             {posts.map(({ slug, frontmatter }, i) => {
               return (
                 <>
-                  <div>coba akan saya tanyakan apa yang terjadi</div>
                   <Link href={`/blog/${slug}`} key={i}>
                     <div className="my-2 font-semibold border-b py-1 cursor-pointer">
                       {frontmatter.title}
@@ -121,7 +118,9 @@ export default function BlogPost({ post: { frontmatter, content }, posts }) {
           className={`p-3 xl:hidden bg-slate-700 right-0 bottom-0 rounded-full text-white fixed mr-3 mb-3 shadow-2xl transform transition-all duration-200 ${
             isToggle ? "translate-y-0" : "translate-y-20"
           }`}
-          onClick={() => toTop.current?.scrollIntoView({ behavior: "smooth" })}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         >
           <UilArrowUp />
         </div>
@@ -139,6 +138,8 @@ export async function getStaticPaths() {
     },
   }));
 
+  console.log(paths);
+
   return {
     paths,
     fallback: false,
@@ -146,10 +147,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { blogPage } }) {
+  console.log(blogPage);
   const fileName = fs.readFileSync(`posts/${blogPage}.md`, "utf-8");
-  const allPosted = fs.readdirSync("posts");
+  const allPosts = fs.readdirSync("posts");
 
-  const posts = allPosted.map((fileName) => {
+  const posts = allPosts.map((fileName) => {
     const slug = fileName.replace(".md", "");
     const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
     const { data: frontmatter } = matter(readFile);

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Layout>
       <div id="container" className="p-5 lg:p-10">
-        <div className="flex flex-col">
+        <div className="flex flex-col prose prose-pre:p-0 max-w-none">
           <div className="pb-5 border-b-2">
             <div className="flex lg:inline-block lg:float-left items-center justify-center mb-5 lg:mb-0">
               <div
@@ -29,13 +29,13 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center lg:text-left">
-              <div className="text-3xl font-semibold m-0">
+              <div className="text-2xl xl:text-3xl font-semibold m-0">
                 MUHAMMAD ZAQI Al QURAISYI
               </div>
-              <div className="text-3xl font-thin">
+              <div className="text-2xl xl:text-3xl font-thin">
                 Frontend Developer at Mandala Multifinance
               </div>
-              <div className="text-xl mt-3 text-justify break-all">
+              <div className="xl:text-xl mt-3 text-justify">
                 A Web and mobile developer who have a very high interest
                 intechnological developments, especially in web and mobile app
                 development. Able to adapt quickly both learning new things,
@@ -54,7 +54,7 @@ export default function Home() {
             <TitleFlip
               title={"Career"}
               icon="👨🏼‍💻"
-              styles="text-3xl font-semibold my-3"
+              styles="text-2xl xl:text-3xl font-semibold my-3"
             />
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 mb-3">
               <CardCareer
@@ -99,9 +99,9 @@ export default function Home() {
             <TitleFlip
               title={"Academic"}
               icon="👨🏼‍🎓"
-              styles="text-3xl font-semibold my-3"
+              styles="text-2xl xl:text-3xl font-semibold my-3"
             />
-            <div className="py-4 px-12">
+            <div className="py-2 xl:py-4 xl:px-12">
               <AcademicTimeline />
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function Home() {
             <TitleFlip
               title={"Contact"}
               icon="📞"
-              styles="text-3xl font-semibold my-3"
+              styles="text-2xl xl:text-3xl font-semibold my-3"
             />
             <div className="px-4">
               <ContactForm />

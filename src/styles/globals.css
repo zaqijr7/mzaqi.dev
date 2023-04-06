@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .navbar-active {
+    animation: collapse-active 1s forwards;
+    transition: height;
+  }
+
+  @keyframes collapse-active {
+    0% {
+      max-height: 0px;
+    }
+
+    100% {
+      max-height: 500px;
+    }
+  }
+
+  .navbar-inactive {
+    animation: collapse-inactive 0.5s forwards;
+    animation-delay: 0ms;
+    transition-delay: 0ms;
+    transition: height;
+  }
+
+  @keyframes collapse-inactive {
+    0% {
+      max-height: 500px;
+    }
+
+    100% {
+      max-height: 0px;
+    }
+  }
+} 
+
 .bg-primary {
   background-color: #0085D0;
 }

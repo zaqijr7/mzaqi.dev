@@ -12,3 +12,4 @@ export { default as BtnPrimary } from "./BtnPrimary";
 export { default as ArticleCard } from "./ArticleCard";
 export { default as Footer } from "./Footer";
 export { default as PrivateRoute } from "./PrivateRoute";
+export { default as Navbar } from "./Navbar";
