@@ -9,7 +9,15 @@ module.exports = {
       transitionProperty: {
         height: "height",
       },
+      fontWeight: {
+        thin: "100",
+        extrabold: "800",
+      },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("tailwindcss"),
+    require("autoprefixer"),
+  ],
 };

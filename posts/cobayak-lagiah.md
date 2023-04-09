@@ -6,8 +6,8 @@ image: https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&
 date: '2021-09-22'
 teaser: 'Test jadi ini lah contoh teaser yang nantinya bakal muncul di thumbnail, okeee.'
 tags:
-  - nextjs
-  - javascript
+  - Next Js
+  - Javascript
 ---
 
 # The main content

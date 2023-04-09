@@ -1,6 +1,11 @@
 import React from "react";
 
-const BtnPortfolioType = ({ children, isActive = false, className }) => {
+const BtnPortfolioType = ({
+  children,
+  isActive = false,
+  className,
+  onClick,
+}) => {
   return (
     <>
       <button
@@ -9,6 +14,7 @@ const BtnPortfolioType = ({ children, isActive = false, className }) => {
             ? "bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
             : "border-2"
         } rounded-full whitespace-nowrap text-sm`}
+        onClick={onClick}
       >
         {children}
       </button>

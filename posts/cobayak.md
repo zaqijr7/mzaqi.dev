@@ -6,9 +6,11 @@ image: https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?ixlib=rb-4.0
 date: '2021-09-22'
 teaser: 'Test jadi ini lah contoh teaser yang nantinya bakal muncul di thumbnail, okeee. Cillum mollit Lorem laboris irure. Et cillum magna laborum velit amet consequat quis veniam deserunt ut nulla esse ut non. Sunt pariatur veniam do sint ullamco proident.'
 tags:
-  - nextjs
-  - array
+  - Next Js
+  - Personal
 ---
 
 # The main content
+
+Coba lah yaa jangan saya jadikan bisa
 

@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import { PresentationView, Sidebar } from "@components/index";
 import { dontAllowSidebar } from "@utils/constant";
 import "@styles/globals.css";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -15,6 +16,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>mzaqi.dev</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <PresentationView {...pageProps}>
         <IsVisibleSidebar />
         <AnimatePresence

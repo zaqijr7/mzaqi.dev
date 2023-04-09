@@ -15,6 +15,7 @@ import remarkGfm from "remark-gfm";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import dark from "react-syntax-highlighter/dist/cjs/styles/hljs/atom-one-dark";
 import Link from "next/link";
+import moment from "moment";
 
 export default function BlogPost({ post: { frontmatter, content }, posts }) {
   const router = useRouter();
@@ -47,18 +48,7 @@ export default function BlogPost({ post: { frontmatter, content }, posts }) {
             <div className="my-5 font-bold text-3xl">{frontmatter.title}</div>
             <div className="flex items-center">
               <div className="bg-gray-200 py-2 px-3 rounded-full">
-                {frontmatter.date}
-              </div>
-              <div
-                className="bg-gray-200 p-2 rounded-full mx-2 flex items-center"
-                onClick={() => setIsToggle(!isToggle)}
-              >
-                <span className="mr-1">36</span>
-                <UilHeart />
-              </div>
-              <div className="bg-gray-200 p-2 rounded-full flex items-center">
-                <span className="mr-1">36</span>
-                <UilShare />
+                {moment(frontmatter.date).format("DD MMMM YYYY")}
               </div>
               {/* <div>04 October 2022</div> */}
             </div>
