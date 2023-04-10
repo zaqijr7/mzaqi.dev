@@ -13,8 +13,8 @@
 
 .academicContainer li.academicItem::before {
   position: absolute;
-  left: -18.6px;
-  top: -17px;
+  left: -17.6px;
+  top: -21px;
   content: "🏫";
   font-size: 35px;
 }

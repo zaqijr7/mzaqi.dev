@@ -20,7 +20,7 @@ const ContactForm = () => {
           <label>Message :</label>
           <textarea className="border-2 rounded-md py-1 px-2 border-gray-300 active:border-blue-900"></textarea>
         </div>
-        <button className="bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold text-white py-3 px-5 rounded-md shadow-md active:shadow-none">
+        <button className="text-sm bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold text-white py-2 px-10 rounded-md shadow-md active:shadow-none">
           Send
         </button>
       </form>

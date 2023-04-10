@@ -17,7 +17,7 @@ export default function Home() {
             <div className="flex lg:inline-block lg:float-left items-center justify-center mb-5 lg:mb-0">
               <div
                 id="cover-my-image"
-                className="w-[250px] h-[250px] mr-5 relative"
+                className="w-[200px] h-[200px] mr-5 relative"
               >
                 <Image
                   src={"/saya.jpeg"}
@@ -29,13 +29,13 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center lg:text-left">
-              <div className="text-2xl xl:text-3xl font-semibold m-0">
+              <div className="text-xl xl:text-2xl font-semibold m-0">
                 MUHAMMAD ZAQI Al QURAISYI
               </div>
-              <div className="text-2xl xl:text-3xl font-thin">
+              <div className="text-xl xl:text-2xl font-thin">
                 Frontend Developer at Mandala Multifinance
               </div>
-              <div className="xl:text-xl mt-3 text-justify">
+              <div className="mt-3 text-justify">
                 A Web and mobile developer who have a very high interest
                 intechnological developments, especially in web and mobile app
                 development. Able to adapt quickly both learning new things,
@@ -54,7 +54,7 @@ export default function Home() {
             <TitleFlip
               title={"Career"}
               icon="👨🏼‍💻"
-              styles="text-2xl xl:text-3xl font-semibold my-3"
+              styles="text-xl xl:text-2xl font-semibold my-3"
             />
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 mb-3">
               <CardCareer
@@ -62,7 +62,7 @@ export default function Home() {
                 companyName="Mandala Finance"
                 workPlace="Jakarta"
                 companyWebsite="https://mandalafinance.com/"
-                from="Jun 2022"
+                from="2022-06-27"
                 to="Present"
                 employmentType="Contract"
               />
@@ -71,8 +71,8 @@ export default function Home() {
                 companyName="Cindrum"
                 workPlace="Jakarta"
                 companyWebsite="https://cindrum.com/"
-                from="May 2021"
-                to="Jun 2022"
+                from={"2021-05-02"}
+                to={"2022-06-22"}
                 employmentType="Contract"
               />
               <CardCareer
@@ -80,8 +80,8 @@ export default function Home() {
                 companyName="DePrint"
                 workPlace="Tasikmalaya"
                 companyWebsite="#"
-                from="May 2019"
-                to="Jul 2019 "
+                from="2019-05-28"
+                to="2019-08-02"
                 employmentType="Freelance"
               />
               <CardCareer
@@ -89,8 +89,8 @@ export default function Home() {
                 companyName="Graha Putra Nusantara"
                 workPlace="Tasikmalaya"
                 companyWebsite="https://indokontraktor.com/business/pt-graha-putra-nusantara"
-                from="May 2017"
-                to="Aug 2017"
+                from="2017-05-01"
+                to="2017-08-19"
                 employmentType="Internship"
               />
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
             <TitleFlip
               title={"Academic"}
               icon="👨🏼‍🎓"
-              styles="text-2xl xl:text-3xl font-semibold my-3"
+              styles="text-xl xl:text-2xl font-semibold my-3"
             />
             <div className="py-2 xl:py-4 xl:px-12">
               <AcademicTimeline />
@@ -109,9 +109,9 @@ export default function Home() {
             <TitleFlip
               title={"Contact"}
               icon="📞"
-              styles="text-2xl xl:text-3xl font-semibold my-3"
+              styles="text-xl xl:text-2xl font-semibold my-3"
             />
-            <div className="px-4">
+            <div className="">
               <ContactForm />
             </div>
           </div>

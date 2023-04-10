@@ -10,7 +10,7 @@ const AcademicTimeline = () => {
             <Link
               href={"https://www.fazztrack.com/"}
               target="_blank"
-              className="font-semibold xl:text-lg"
+              className="font-semibold"
             >
               Arkademy Tech Academy
             </Link>
@@ -21,7 +21,7 @@ const AcademicTimeline = () => {
             <Link
               href={"http://smkstaracita.mysch.id/kalender"}
               target="_blank"
-              className="font-semibold xl:text-lg"
+              className="font-semibold"
             >
               SMK Islamiyah Ciawi
             </Link>
