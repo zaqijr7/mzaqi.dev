@@ -26,7 +26,9 @@ export default function Blog({ posts }) {
   return (
     <Layout>
       <div className="xl:p-10 lg:p-5 p-3">
-        <div className="text-3xl font-semibold mb-5">📑 Articles</div>
+        <div className="text-xl xl:text-2xl font-semibold mb-5">
+          📑 Articles
+        </div>
         <div className="w-full flex overflow-x-scroll py-3 scrollbar-hide">
           {kindOfArticles.map((item, index) => {
             return (

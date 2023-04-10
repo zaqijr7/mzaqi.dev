@@ -25,7 +25,7 @@ const ArticleCard = ({ link, date, thumbnail, title, teaser }) => {
           />
         </div>
         <div onClick={() => pushToArticle()} className="p-3 cursor-pointer">
-          <h1 className="font-semibold mb-3 text-lg">{title}</h1>
+          <h1 className="font-semibold mb-3 xl:text-lg">{title}</h1>
           <p className="text-justify">
             {teaser.length >= 110 ? teaser.slice(0, 110 - 1) + "..." : teaser}
           </p>

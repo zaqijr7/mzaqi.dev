@@ -10,12 +10,14 @@ export default function Home() {
         </div>
         <div className="lg:w-6/12 h-screen lg:h-fit flex justify-center items-center">
           <div>
-            <div className="text-5xl font-thin mb-3">Hello i&apos;m</div>
-            <h2 className="text-6xl font-medium">
+            <div className="text-3xl xl:text-5xl font-thin mb-3">
+              Hallo i&apos;m
+            </div>
+            <h2 className="text-3xl xl:text-5xl font-medium">
               Muhammad Zaqi Al <br />
               Quraisyi
             </h2>
-            <div className="text-3xl p-3 bg-gradient-to-r from-cyan-500 to-blue-500 font-thin mt-5 inline-block text-white">
+            <div className="text-xl xl:text-3xl p-3 bg-gradient-to-r from-cyan-500 to-blue-500 font-thin mt-5 inline-block text-white">
               Fullstack Web & Mobile Developer
             </div>
           </div>

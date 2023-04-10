@@ -19,7 +19,9 @@ const CardPortfolio = () => {
           />
         </div>
         <div className="p-3">
-          <div className="text-xl font-semibold my-3">POS (Point of Sales)</div>
+          <div className="xl:text-lg font-semibold my-3">
+            POS (Point of Sales)
+          </div>
           <div className="w-full my-3">
             Irure esse dolore labore sunt irure excepteur aliqua esse elit duis
             nulla ex enim. Reprehenderit adipisicing velitas...

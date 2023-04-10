@@ -8,7 +8,9 @@ export default function Portfolio() {
   return (
     <Layout>
       <div className="xl:p-10 lg:p-5 p-3">
-        <div className="text-3xl font-semibold mb-5">🏆 My Project</div>
+        <div className="text-xl xl:text-2xl font-semibold mb-5">
+          🏆 My Project
+        </div>
         <div className="flex overflow-auto scrollbar-hide mb-5">
           {typeOfProject.map((item, index) => {
             return (
