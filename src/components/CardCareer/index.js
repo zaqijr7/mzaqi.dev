@@ -52,8 +52,8 @@ const CardCareer = ({
           🏢 {workPlace}
         </div>
         <div>
-          {moment(from).format("DD MMMM YYYY")} -{" "}
-          {moment(to).format("DD MMMM YYYY")} •{" "}
+          {moment(from).format("DD MMM YYYY")} -{" "}
+          {to === "Present" ? "Present" : moment(to).format("DD MMM YYYY")} •{" "}
           {formatDuration(
             moment
               .duration(
