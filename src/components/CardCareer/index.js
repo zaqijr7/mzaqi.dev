@@ -40,30 +40,28 @@ const CardCareer = ({
   }
 
   return (
-    <>
-      <div className="border rounded-lg p-5 shadow-md hover:shadow-lg">
-        <div className="font-semibold">
-          {title} • {employmentType}
-        </div>
-        <div className="my-2 font-light">
-          <Link href={companyWebsite} target="_blank" className="underline">
-            {companyName}
-          </Link>{" "}
-          🏢 {workPlace}
-        </div>
-        <div>
-          {moment(from).format("DD MMM YYYY")} -{" "}
-          {to === "Present" ? "Present" : moment(to).format("DD MMM YYYY")} •{" "}
-          {formatDuration(
-            moment
-              .duration(
-                moment(to === "Present" ? Date.now() : to).diff(moment(from))
-              )
-              .asMilliseconds()
-          )}
-        </div>
+    <div className="border rounded-lg p-5 shadow-md hover:shadow-lg">
+      <div className="font-semibold">
+        {title} • {employmentType}
       </div>
-    </>
+      <div className="my-2 font-light">
+        <Link href={companyWebsite} target="_blank" className="underline">
+          {companyName}
+        </Link>{" "}
+        🏢 {workPlace}
+      </div>
+      <div>
+        {moment(from).format("DD MMM YYYY")} -{" "}
+        {to === "Present" ? "Present" : moment(to).format("DD MMM YYYY")} •{" "}
+        {formatDuration(
+          moment
+            .duration(
+              moment(to === "Present" ? Date.now() : to).diff(moment(from))
+            )
+            .asMilliseconds()
+        )}
+      </div>
+    </div>
   );
 };
 

@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import { AnimatePresence } from "framer-motion";
 import { PresentationView, Sidebar } from "@components/index";
 import { dontAllowSidebar } from "@utils/constant";
-import "@styles/globals.css";
 import Head from "next/head";
+import "@styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
